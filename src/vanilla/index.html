@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <link rel="stylesheet" href="/src/style.css"/>
   </head>
   <body>
     <div id="app">
       <div id="container">
-        <video src="./ditto_1080p.mp4" controls/>
+        <div id="video_wrapper">
+            <video id="sample" src="./ditto_1080p.mp4"></video>
+            <div id="overlay">overlay</div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
